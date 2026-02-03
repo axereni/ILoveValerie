@@ -1,0 +1,122 @@
+/* ------------------------
+   GENERAL STYLING
+-------------------------*/
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #ffc0cb; /* light pink background */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.slider {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ------------------------
+   SLIDES
+-------------------------*/
+.slide {
+  display: none; /* hide all slides by default */
+}
+
+.slide.active {
+  display: block; /* show only the active slide */
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #b30059; /* darker pink for headings */
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ------------------------
+   BUTTONS
+-------------------------*/
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* YES BUTTON */
+.yes-btn {
+  background-color: #ff4d88;
+  color: white;
+}
+
+.yes-btn:hover {
+  background-color: #e7437a;
+  transform: scale(1.05);
+}
+
+/* NO BUTTON */
+.no-btn {
+  background-color: #555;
+  color: white;
+}
+
+.no-btn:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+/* PREV / NEXT BUTTONS */
+button[onclick="prevSlide()"],
+button[onclick="nextSlide()"] {
+  background-color: #ff6699;
+  color: white;
+}
+
+button[onclick="prevSlide()"]:hover,
+button[onclick="nextSlide()"]:hover {
+  background-color: #ff3385;
+  transform: scale(1.05);
+}
+
+/* ------------------------
+   EXPLODE ANIMATION (NO BUTTON)
+-------------------------*/
+.no-btn.explode {
+  animation: explode 0.6s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* ------------------------
+   FINAL IMAGE
+-------------------------*/
+.valentine-img {
+  max-width: 90%;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #ff4d88;
+}

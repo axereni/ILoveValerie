@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valerie, Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="slider">
+
+    <div class="slide active">
+      <h1>Look at us being dumbasses...</h1>
+      <!-- Example video embed: Replace VIDEO_ID with a real one or use your own video -->
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/VIDEO_ID" 
+        allowfullscreen>
+      </iframe>
+
+      <div class="buttons">
+        <button onclick="prevSlide()" disabled>⬅ Previous</button>
+        <button onclick="nextSlide()">Next ➡</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <h1>HAHAHA REMEMBER THIS??</h1>
+      <p>....nice one baby</p>
+
+      <video controls width="560" >
+        <source src="your-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="buttons">
+        <button onclick="prevSlide()">⬅ Previous</button>
+        <button onclick="nextSlide()">Next ➡</button>
+      </div>
+    </div>
+
+    <!-- LAST SLIDE with Yes / No buttons -->
+    <div class="slide">
+      <h1>WILL YOU BE MY VALENTINE</h1>
+      <p>u kinda have no choice…</p>
+
+      <div class="buttons">
+        <button class="no-btn" onclick="explodeNo()">No 💔</button>
+        <button class="yes-btn" onclick="yesClick()">Yes 💖</button>
+      </div>
+    </div>
+
+    <!-- FINAL IMAGE SLIDE -->
+    <div class="slide">
+      <h1>YAYYYYY 💕</h1>
+      <p>OKAYYY. baby im writing this on my pc and i do kinda type fast ehheheh, no i dont. anwyays like i was saying. you probably was scrolling through this *I HOPE* if not then im so cooked.either way, my love theres so many things to love about you. honestly if only you knew how much you mean to me and the things i would do for you,becasue there is a lot of things that i would do for you. Ranging from spending hours figuring out to make a website to ask u to be my valentine....to spending millions of years telling you how beautiful and loving you are, ngl when u said "i dont really do valentines" IT KIDNA SCARED ME COZ YEAH I TRIED PLAYING IT OFF BUT I REALLY ALSO WANTED TO ASK U AND I KINDA ASKED AFTER THE WEBSITE WAS PRETTY MUCH FINISHED, anyways i hope you enjoyed the little thing that i made of us, the compliation of hte clips. honestly baby if only you knew how beautiful and amazing you are, not only the fact that you dont go out every weekend partying, but also the fact that when im feelign down and need some help. YOU DO NOTTT LET ME GO UNTIL I GET IT BAHAHAH, honeslty i wouldnt have it any other way. And yes, you are the most beautiful girl in this world and i cant put it into words how much I FUCKING LVOE YOU ADN OMSD CAN WE TALK ABT HOW BEAUTIFUL YOU AREEE OMFDSSS. omds, if only you knew. those eyes. are so amaizng, that hair omds, those luips, OMDS. those eyebrows, eyelashes, nose cheeks (both pairs) are fucking amazing. i honeslty wish i got more pics of you because of how good you look. and i hope you knwo that no matter what, id kill for you, id be kind for you, id live for you. from the moments where my little angel calls me "daddy" to the moments where i need help to the moments where we are both js being dumbasses and having so much fun and nobody and nothing can get inbetween us, im sorry i couldnt be there with flwoers and chocolate and things. i know chocolate makes you sick sometimes so probably sushi instead, anwyays. like i was saying. tysm for saying yes. my angel, ill stop this here coz if i dont ill be speaking forever...</p>
+      <img src="final-image.jpg" alt="Valentine's surprise" class="valentine-img" />
+
+      <div class="buttons">
+        <button onclick="prevSlide()">⬅ Previous</button>
+        <button onclick="nextSlide()" disabled>Next ➡</button>
+      </div>
+      <div class="slide">
+  <h1>Hi</h1>
+</div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
